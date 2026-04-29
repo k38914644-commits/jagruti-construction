@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagruti Construction | Roads • Drains • Culverts</title>
+    <meta name="description" content="Jagruti Construction - Professional Civil Contractors specializing in Roads, Drains, and Culverts. Supported by Civil Engineering expertise.">
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Custom Theme Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1a2a47',
+                            900: '#0b162c',
+                        },
+                        gold: {
+                            400: '#e5c158',
+                            500: '#d4af37',
+                            600: '#b5952f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Montserrat', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Montserrat', sans-serif; }
+        
+        /* Custom image overlay for hero section */
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(11, 22, 44, 0.9) 0%, rgba(11, 22, 44, 0.7) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy-900 shadow-lg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i data-lucide="hard-hat" class="text-gold-500 w-8 h-8"></i>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-bold text-xl tracking-wider text-white">JAGRUTI</span>
+                        <span class="text-[0.65rem] tracking-[0.2em] text-gold-500 uppercase font-semibold">Construction</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-200 hover:text-gold-500 font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-200 hover:text-gold-500 font-medium transition-colors">About</a>
+                    <a href="#services" class="text-gray-200 hover:text-gold-500 font-medium transition-colors">Services</a>
+                    <a href="#gallery" class="text-gray-200 hover:text-gold-500 font-medium transition-colors">Gallery</a>
+                    <a href="#contact" class="bg-gold-500 text-navy-900 px-6 py-2 rounded font-bold hover:bg-gold-400 transition-colors shadow-md">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-200 hover:text-white focus:outline-none p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-800 border-t border-navy-900 shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-navy-900">Home</a>
+                <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-navy-900">About</a>
+                <a href="#services" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-navy-900">Services</a>
+                <a href="#gallery" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-navy-900">Gallery</a>
+                <a href="#contact" class="mobile-link block px-3 py-2 mt-4 text-center rounded-md text-base font-bold text-navy-900 bg-gold-500 hover:bg-gold-400">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Construction Site" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <h1 class="font-heading text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+                <span class="block text-gold-500 mb-2">Jagruti</span> Construction
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl text-gray-200 font-medium mb-4 tracking-wide">
+                Roads &bull; Drains &bull; Culverts
+            </p>
+            <div class="w-24 h-1 bg-gold-500 mx-auto mb-8 rounded"></div>
+            <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                Building durable infrastructure for a better tomorrow. Quality, reliability, and precision in every project.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-gold-500 text-navy-900 font-bold text-lg px-8 py-3 rounded shadow-lg hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300">
+                    Get a Quote
+                </a>
+                <a href="#services" class="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-3 rounded hover:bg-white hover:text-navy-900 transition-all duration-300">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Civil Engineering Team" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 bg-gold-500 text-navy-900 px-6 py-4 font-bold text-lg">
+                            Trusted Contractors
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 space-y-6">
+                    <h4 class="text-gold-600 font-bold uppercase tracking-wider text-sm flex items-center gap-2">
+                        <div class="w-8 h-0.5 bg-gold-500"></div> About Us
+                    </h4>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900">
+                        Laying the Foundation for Progress
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        At Jagruti Construction, we take pride in being a premier civil contractor dedicated to building the vital arteries of our communities. From robust road networks to efficient drainage systems and structurally sound culverts, our work stands the test of time.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-navy-900 p-6 rounded-r">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-navy-900 p-2 rounded text-gold-500 flex-shrink-0">
+                                <i data-lucide="ruler" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-navy-900 text-lg mb-1">Supported by Civil Engineering Expertise</h3>
+                                <p class="text-gray-700 text-sm">Every project we undertake is backed by profound engineering knowledge, ensuring safety, compliance, and excellence in execution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i data-lucide="check-circle-2" class="text-gold-500 w-5 h-5"></i> High-Quality Materials
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i data-lucide="check-circle-2" class="text-gold-500 w-5 h-5"></i> On-Time Delivery
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i data-lucide="check-circle-2" class="text-gold-500 w-5 h-5"></i> Experienced Workforce
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i data-lucide="check-circle-2" class="text-gold-500 w-5 h-5"></i> Modern Equipment
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-gold-600 font-bold uppercase tracking-wider text-sm flex items-center justify-center gap-2 mb-4">
+                    <div class="w-8 h-0.5 bg-gold-500"></div> Core Specialties <div class="w-8 h-0.5 bg-gold-500"></div>
+                </h4>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+                    Our Expertise in Civil Works
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    We specialize in essential infrastructure projects, executing them with precision and adhering to the highest civil engineering standards.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: Roads -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-navy-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Road Construction" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 relative">
+                        <div class="absolute -top-10 right-8 bg-gold-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg border-4 border-white z-20">
+                            <i data-lucide="map" class="text-navy-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-navy-900 mb-3">Road Construction</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Building durable, well-planned roads and highways designed to withstand heavy traffic and severe weather conditions using premium asphalt and concrete materials.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Drains -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-navy-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Drainage Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 relative">
+                        <div class="absolute -top-10 right-8 bg-gold-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg border-4 border-white z-20">
+                            <i data-lucide="droplet" class="text-navy-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-navy-900 mb-3">Drainage Systems</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Expert installation of storm drains, sewer lines, and water management networks to ensure proper water flow and prevent flooding in urban and rural areas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3: Culverts -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group border border-gray-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-navy-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Culverts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 relative">
+                        <div class="absolute -top-10 right-8 bg-gold-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg border-4 border-white z-20">
+                            <i data-lucide="columns" class="text-navy-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-navy-900 mb-3">Culvert Installation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Design and construction of structurally sound pipe, box, and arch culverts for roads and railways, ensuring safe passage of water ways and traffic above.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="gallery" class="py-24 bg-navy-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h4 class="text-gold-500 font-bold uppercase tracking-wider text-sm flex items-center gap-2 mb-4">
+                        <div class="w-8 h-0.5 bg-gold-500"></div> Our Portfolio
+                    </h4>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold">Featured Projects</h2>
+                </div>
+                <p class="text-gray-300 max-w-md">
+                    Take a look at some of our recent infrastructural achievements, demonstrating our commitment to quality and engineering excellence.
+                </p>
+            </div>
+
+            <!-- Gallery Grid (Placeholders) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Item 1 -->
+                <div class="group relative overflow-hidden rounded-lg aspect-w-4 aspect-h-3 bg-gray-800">
+                    <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Highway Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <i data-lucide="search" class="text-gold-500 w-10 h-10 mb-3"></i>
+                        <h3 class="text-xl font-bold">Highway Expansion</h3>
+                        <p class="text-gold-400 text-sm mt-1">Road Construction</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="group relative overflow-hidden rounded-lg aspect-w-4 aspect-h-3 bg-gray-800">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="City Drainage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <i data-lucide="search" class="text-gold-500 w-10 h-10 mb-3"></i>
+                        <h3 class="text-xl font-bold">Urban Storm Drains</h3>
+                        <p class="text-gold-400 text-sm mt-1">Drainage Systems</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="group relative overflow-hidden rounded-lg aspect-w-4 aspect-h-3 bg-gray-800">
+                    <img src="https://images.unsplash.com/photo-1563212046-51e604de42f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Box Culvert" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <i data-lucide="search" class="text-gold-500 w-10 h-10 mb-3"></i>
+                        <h3 class="text-xl font-bold">Concrete Box Culvert</h3>
+                        <p class="text-gold-400 text-sm mt-1">Culvert Installation</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="group relative overflow-hidden rounded-lg aspect-w-4 aspect-h-3 bg-gray-800">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Road Resurfacing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-c
